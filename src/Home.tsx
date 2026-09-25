@@ -4,6 +4,7 @@ import colourImage from "./assets/img/dyecut2.jpg";
 import braidsImage from "./assets/img/dreadcut.jpg";
 import beardImage from "./assets/img/beard.jpg";
 import Navbar from "./components/Navbar";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="site">
@@ -28,13 +29,13 @@ function Home() {
             </p>
 
             <div className="hero-actions">
-              <a href="/booking" className="primary-button">
+              <Link to="/booking" className="primary-button">
                 Book an Appointment
-              </a>
+              </Link>
 
-              <a href="/services" className="secondary-button">
+              <Link to="/services" className="secondary-button">
                 Explore Services
-              </a>
+              </Link>
             </div>
           </div>
 
