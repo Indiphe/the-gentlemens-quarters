@@ -1,33 +1,13 @@
 import "./Contact.css";
 import { Link } from "react-router-dom";
 import barberImage from "../assets/img/Hero.jpg";
+import Navbar from "../components/Navbar";
 
 function Contact() {
   return (
     <main className="contact-page">
       {/* NAVBAR */}
-      <header className="navbar">
-        <Link to="/" className="brand">
-          <span className="brand-mark">GQ</span>
-
-          <span className="brand-name">
-            THE GENTLEMEN'S
-            <strong>QUARTERS</strong>
-          </span>
-        </Link>
-
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
-          <Link to="/barbers">Barbers</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-
-        <Link to="/booking" className="header-book">
-          Book Now
-        </Link>
-      </header>
+      <Navbar />
 
       {/* HERO */}
       <section className="contact-hero">

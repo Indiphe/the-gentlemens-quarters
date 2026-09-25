@@ -4,6 +4,7 @@ import Home from "./Home";
 import Services from "./pages/Services";
 import Barbers from "./pages/Barbers";
 import Contact from "./pages/Contact";
+import Booking from "./pages/Booking";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/barbers" element={<Barbers />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
     </BrowserRouter>
   );

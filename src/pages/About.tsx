@@ -1,6 +1,6 @@
 import "./About.css";
 import { Link } from "react-router-dom";
-
+import Navbar from "../components/Navbar";
 import barberImage from "../assets/img/barber.jpg";
 
 const philosophy = [
@@ -27,29 +27,7 @@ function About() {
   return (
     <main className="about-page">
       {/* NAVBAR */}
-      <header className="navbar">
-        <Link to="/" className="brand">
-          <span className="brand-mark">GQ</span>
-
-          <span className="brand-name">
-            THE GENTLEMEN'S
-            <strong>QUARTERS</strong>
-          </span>
-        </Link>
-
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
-          <Link to="/barbers">Barbers</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-
-        <Link to="/booking" className="header-book">
-          Book Now
-        </Link>
-      </header>
-
+      <Navbar />
       {/* HERO */}
       <section className="about-hero">
         <div className="about-hero-image">

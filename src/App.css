@@ -130,7 +130,7 @@ a {
       rgba(17, 17, 17, 0.78) 42%,
       rgba(17, 17, 17, 0.2) 100%
     ),
-    url("src/assets/img/Hero2.jpg") center / cover no-repeat;
+    url("./assets/img/Hero2.jpg") center / cover no-repeat;
 }
 
 .hero-overlay {

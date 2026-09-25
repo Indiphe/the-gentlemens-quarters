@@ -6,6 +6,7 @@ import barber1 from "../assets/img/barber1.jpg";
 import barber2 from "../assets/img/barber2.jpg";
 import barber3 from "../assets/img/barber3.jpg";
 import barber4 from "../assets/img/barber4.jpg";
+import Navbar from "../components/Navbar";
 
 const barbers = [
   {
@@ -50,28 +51,7 @@ function Barbers() {
   return (
     <main className="barbers-page">
       {/* NAVBAR */}
-      <header className="navbar">
-        <Link to="/" className="brand">
-          <span className="brand-mark">GQ</span>
-
-          <span className="brand-name">
-            THE GENTLEMEN'S
-            <strong>QUARTERS</strong>
-          </span>
-        </Link>
-
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
-          <Link to="/barbers">Barbers</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-
-        <Link to="/booking" className="header-book">
-          Book Now
-        </Link>
-      </header>
+      <Navbar />
 
       {/* HERO */}
       <section className="barbers-hero">

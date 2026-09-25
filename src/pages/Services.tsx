@@ -7,6 +7,7 @@ import braidsImage from "../assets/img/braid.jpg";
 import beardImage from "../assets/img/beard1.jpg";
 import signatureImage from "../assets/img/beard3.jpg";
 import kidsImage from "../assets/img/kid2.jpg";
+import Navbar from "../components/Navbar";
 
 const categories = [
   {
@@ -93,29 +94,7 @@ function Services() {
   return (
     <main className="services-page">
       {/* NAVBAR */}
-      <header className="navbar">
-        <Link to="/" className="brand">
-          <span className="brand-mark">GQ</span>
-
-          <span className="brand-name">
-            THE GENTLEMEN'S
-            <strong>QUARTERS</strong>
-          </span>
-        </Link>
-
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
-          <Link to="/barbers">Barbers</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-
-        <Link to="/booking" className="header-book">
-          Book Now
-        </Link>
-      </header>
-
+      <Navbar />
       {/* HERO */}
       <section className="services-hero">
         <div className="services-hero-overlay"></div>

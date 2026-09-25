@@ -1,35 +1,13 @@
 import "./App.css";
-import { Link } from "react-router-dom";
 import cutsImage from "./assets/img/beard2.jpg";
 import colourImage from "./assets/img/dyecut2.jpg";
 import braidsImage from "./assets/img/dreadcut.jpg";
 import beardImage from "./assets/img/beard.jpg";
-
+import Navbar from "./components/Navbar";
 function Home() {
   return (
     <div className="site">
-      <header className="navbar">
-        <Link to="/" className="brand">
-          <span className="brand-mark">GQ</span>
-
-          <span className="brand-name">
-            THE GENTLEMEN'S
-            <strong>QUARTERS</strong>
-          </span>
-        </Link>
-
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
-          <Link to="/barbers">Barbers</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-
-        <Link to="/booking" className="header-book">
-          Book Now
-        </Link>
-      </header>
+      <Navbar />
 
       <main>
         {/* HERO */}
@@ -50,7 +28,7 @@ function Home() {
             </p>
 
             <div className="hero-actions">
-              <a href="#booking" className="primary-button">
+              <a href="/booking" className="primary-button">
                 Book an Appointment
               </a>
 
