@@ -91,6 +91,7 @@ function Home() {
         </section>
 
         {/* SERVICES PREVIEW */}
+        {/* SERVICES PREVIEW */}
         <section className="services-preview" id="services-preview">
           <div className="section-heading">
             <div>
@@ -101,65 +102,73 @@ function Home() {
               </h2>
             </div>
 
-            <a href="/services" className="text-link">
+            <Link to="/services" className="text-link">
               View all services →
-            </a>
+            </Link>
           </div>
 
           <div className="service-grid">
             <article className="service-card featured">
               <div className="service-card-image">
-                <img src={colourImage} alt="Cuts and fades" />
+                <img src={colourImage} alt="Colour and style services" />
                 <span>01</span>
               </div>
 
               <div className="service-card-content">
                 <h3>Colour & Style</h3>
                 <p>Bold colour, creative styles and personal expression.</p>
+
                 <Link to="/services" className="secondary-button">
                   Explore Services
-                </Link>{" "}
+                </Link>
               </div>
             </article>
+
             <article className="service-card">
               <div className="service-card-image">
-                <img src={cutsImage} alt="Cuts and fades" /> <span>02</span>
+                <img src={cutsImage} alt="Cuts and fades" />
+                <span>02</span>
               </div>
 
               <div className="service-card-content">
                 <h3>Cuts & Fades</h3>
                 <p>Sharp cuts. Clean fades. Precision finishing.</p>
+
                 <Link to="/services" className="secondary-button">
                   Explore Services
-                </Link>{" "}
+                </Link>
               </div>
             </article>
+
             <article className="service-card">
               <div className="service-card-image">
-                <img src={braidsImage} alt="Cuts and fades" />
+                <img src={braidsImage} alt="Braids and dreads" />
                 <span>03</span>
               </div>
 
               <div className="service-card-content">
                 <h3>Braids & Dreads</h3>
                 <p>Culture, creativity and modern craftsmanship.</p>
+
                 <Link to="/services" className="secondary-button">
                   Explore Services
-                </Link>{" "}
+                </Link>
               </div>
             </article>
 
             <article className="service-card">
               <div className="service-card-image">
-                <img src={beardImage} alt="Cuts and fades" />
-
+                <img src={beardImage} alt="Beard and grooming services" />
                 <span>04</span>
               </div>
 
               <div className="service-card-content">
                 <h3>Beard & Detail</h3>
                 <p>Sharp edges, defined beards and finishing details.</p>
-                <a href="/services">Explore →</a>
+
+                <Link to="/services" className="secondary-button">
+                  Explore Services
+                </Link>
               </div>
             </article>
           </div>
