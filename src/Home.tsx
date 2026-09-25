@@ -116,7 +116,9 @@ function Home() {
               <div className="service-card-content">
                 <h3>Colour & Style</h3>
                 <p>Bold colour, creative styles and personal expression.</p>
-                <a href="/services">Explore →</a>
+                <Link to="/services" className="secondary-button">
+                  Explore Services
+                </Link>{" "}
               </div>
             </article>
             <article className="service-card">
@@ -127,7 +129,9 @@ function Home() {
               <div className="service-card-content">
                 <h3>Cuts & Fades</h3>
                 <p>Sharp cuts. Clean fades. Precision finishing.</p>
-                <a href="/services">Explore →</a>
+                <Link to="/services" className="secondary-button">
+                  Explore Services
+                </Link>{" "}
               </div>
             </article>
             <article className="service-card">
@@ -139,7 +143,9 @@ function Home() {
               <div className="service-card-content">
                 <h3>Braids & Dreads</h3>
                 <p>Culture, creativity and modern craftsmanship.</p>
-                <a href="/services">Explore →</a>
+                <Link to="/services" className="secondary-button">
+                  Explore Services
+                </Link>{" "}
               </div>
             </article>
 
