@@ -182,9 +182,9 @@ function Home() {
             Ready to look <em>sharp?</em>
           </h2>
 
-          <a href="/booking" className="primary-button">
-            Book Your Appointment
-          </a>
+          <Link to="/booking" className="primary-button">
+            Book an Appointment
+          </Link>
         </section>
       </main>
     </div>
