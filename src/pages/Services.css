@@ -1,0 +1,677 @@
+.services-page {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.services-hero {
+  min-height: 85vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 120px 8vw 90px;
+
+  background:
+    linear-gradient(to top, rgba(17, 17, 17, 0.95), rgba(17, 17, 17, 0.15)),
+    url("../assets/img/classicfade.jpg") center / cover no-repeat;
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.services-hero h1 {
+  margin: 20px 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(4.5rem, 9vw, 9rem);
+  font-weight: 400;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+}
+
+.services-hero h1 em {
+  display: block;
+  color: var(--gold);
+  font-style: italic;
+}
+
+.services-hero-content > p:last-child {
+  max-width: 500px;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   INTRO
+========================================= */
+.brand-name {
+  color: #111111;
+}
+.services-intro-section {
+  padding: 130px 8vw;
+  background: var(--ivory);
+  color: var(--black);
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 100px;
+  align-items: end;
+}
+
+.services-intro-heading h2 {
+  margin: 20px 0 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(4rem, 7vw, 7rem);
+  font-weight: 400;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+}
+
+.services-intro-heading h2 em {
+  display: block;
+  color: var(--gold);
+}
+
+.services-intro-copy {
+  max-width: 500px;
+}
+
+.services-intro-copy p {
+  margin-bottom: 20px;
+
+  color: #5e5a53;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+/* =========================================
+   COLLECTIONS
+========================================= */
+
+.collections-section {
+  padding: 130px 8vw;
+  background: var(--black);
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+
+.section-heading h2 {
+  margin: 18px 0 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.section-heading h2 em {
+  color: var(--gold);
+}
+
+.section-heading > p {
+  max-width: 350px;
+  margin: 0;
+
+  color: #999;
+  line-height: 1.8;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.collection-card {
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.collection-image {
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+}
+
+.collection-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.8s ease;
+}
+
+.collection-card:hover .collection-image img {
+  transform: scale(1.05);
+}
+
+.collection-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(to top, rgba(17, 17, 17, 0.75), transparent 55%);
+}
+
+.collection-image span {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+  color: var(--white);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+}
+
+.collection-content {
+  padding: 35px;
+}
+
+.collection-content h3 {
+  margin: 0 0 10px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.collection-content p {
+  margin: 0 0 25px;
+
+  color: #888;
+  line-height: 1.6;
+}
+
+.collection-content a {
+  color: var(--gold);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.collection-content a span {
+  margin-left: 7px;
+}
+
+/* =========================================
+   CATEGORY BLOCKS
+========================================= */
+
+.category-section {
+  background: var(--ivory);
+  color: var(--black);
+}
+
+.category-block {
+  min-height: 750px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-bottom: 1px solid #d7d1c5;
+}
+
+.category-reverse .category-image {
+  order: 2;
+}
+
+.category-reverse .category-content {
+  order: 1;
+}
+
+.category-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.8s ease;
+}
+
+.category-block:hover .category-image img {
+  transform: scale(1.03);
+}
+
+.category-number {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+  color: var(--white);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+}
+
+.category-content {
+  padding: 100px 8vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-content h2 {
+  margin: 20px 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.5rem, 5vw, 5.5rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.category-description {
+  max-width: 500px;
+
+  margin-bottom: 40px;
+
+  color: #666158;
+  line-height: 1.8;
+}
+
+.category-services {
+  max-width: 550px;
+
+  border-top: 1px solid #d0cabf;
+}
+
+.category-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #d0cabf;
+}
+
+.category-service span {
+  font-size: 0.9rem;
+}
+
+.category-service strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.category-book {
+  display: inline-flex;
+  align-items: center;
+
+  width: fit-content;
+
+  margin-top: 35px;
+  padding-bottom: 8px;
+
+  color: var(--black);
+
+  border-bottom: 1px solid var(--gold);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.category-book span {
+  margin-left: 8px;
+
+  transition: transform 0.3s ease;
+}
+
+.category-book:hover span {
+  transform: translateX(5px);
+}
+
+/* =========================================
+   SIGNATURE
+========================================= */
+
+.signature-section {
+  min-height: 750px;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+
+  background: var(--black);
+}
+
+.signature-image {
+  position: relative;
+  min-height: 650px;
+}
+
+.signature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+}
+
+.signature-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(to right, transparent, rgba(17, 17, 17, 0.35));
+}
+
+.signature-content {
+  padding: 100px 7vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signature-content h2 {
+  margin: 25px 0 20px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.5rem, 5vw, 5.5rem);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.signature-content h2 em {
+  display: block;
+  color: var(--gold);
+}
+
+.signature-content > p {
+  color: #aaa;
+}
+
+.signature-details {
+  margin-top: 40px;
+
+  border-top: 1px solid #333;
+}
+
+.signature-details span {
+  display: block;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #333;
+
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+.signature-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 40px;
+}
+
+.signature-bottom strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.signature-bottom a {
+  color: var(--gold);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   KIDS
+========================================= */
+
+.kids-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: #e9e4d9;
+  color: var(--black);
+}
+
+.kids-image {
+  min-height: 600px;
+}
+
+.kids-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+}
+
+.kids-content {
+  padding: 100px 8vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kids-content h2 {
+  margin: 20px 0 25px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3.5rem, 5vw, 5.5rem);
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.kids-content h2 em {
+  display: block;
+  color: var(--gold);
+}
+
+.kids-content > p:not(.eyebrow) {
+  max-width: 480px;
+
+  color: #666158;
+  line-height: 1.8;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.services-cta {
+  padding: 150px 8vw;
+
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(17, 17, 17, 0.82), rgba(17, 17, 17, 0.92)),
+    url("../assets/img/ladies2.jpg") center / cover no-repeat;
+}
+
+.services-cta h2 {
+  margin: 20px auto 45px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 400;
+  line-height: 0.85;
+}
+
+.services-cta h2 em {
+  color: var(--gold);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .services-hero {
+    min-height: 65vh;
+    padding: 100px 7vw 70px;
+  }
+
+  .services-intro-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    padding: 90px 7vw;
+  }
+
+  .collections-section {
+    padding: 90px 7vw;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-image {
+    height: 500px;
+  }
+
+  .category-block {
+    grid-template-columns: 1fr;
+  }
+
+  .category-reverse .category-image {
+    order: initial;
+  }
+
+  .category-reverse .category-content {
+    order: initial;
+  }
+
+  .category-image {
+    min-height: 550px;
+  }
+
+  .category-content {
+    padding: 80px 7vw;
+  }
+
+  .signature-section {
+    grid-template-columns: 1fr;
+  }
+
+  .signature-image {
+    min-height: 600px;
+  }
+
+  .signature-content {
+    padding: 80px 7vw;
+  }
+
+  .kids-section {
+    grid-template-columns: 1fr;
+  }
+
+  .kids-image {
+    min-height: 550px;
+  }
+
+  .kids-content {
+    padding: 80px 7vw;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .services-hero {
+    min-height: 70vh;
+    padding: 90px 6vw 60px;
+  }
+
+  .services-hero h1 {
+    font-size: 4rem;
+  }
+
+  .services-intro-section {
+    padding: 75px 6vw;
+  }
+
+  .services-intro-heading h2 {
+    font-size: 3.8rem;
+  }
+
+  .collections-section {
+    padding: 75px 6vw;
+  }
+
+  .collection-image {
+    height: 400px;
+  }
+
+  .collection-content {
+    padding: 30px;
+  }
+
+  .category-image {
+    min-height: 450px;
+  }
+
+  .category-content {
+    padding: 70px 6vw;
+  }
+
+  .category-content h2 {
+    font-size: 3.7rem;
+  }
+
+  .signature-image {
+    min-height: 450px;
+  }
+
+  .signature-content {
+    padding: 70px 6vw;
+  }
+
+  .signature-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .kids-image {
+    min-height: 450px;
+  }
+
+  .kids-content {
+    padding: 70px 6vw;
+  }
+
+  .services-cta {
+    padding: 100px 6vw;
+  }
+}
